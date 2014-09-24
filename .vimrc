@@ -30,7 +30,4 @@ nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
 nnoremap ¬ <C-W>>
 nnoremap ˙ <C-W><
-
-nnoremap <D-LEFT> <ESC>A
-nnoremap <D-RIGHT> <ESC>I
-
+nnoremap <silent> <C-M> :nohlsearch<CR>
