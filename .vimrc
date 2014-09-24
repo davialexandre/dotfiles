@@ -8,6 +8,7 @@ set history=10000
 set autoindent
 set expandtab
 set tabstop=4
+set shiftwidth=4
 set hlsearch
 set incsearch
 set showtabline=2
