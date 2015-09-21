@@ -15,6 +15,9 @@
     ~/.gitconfig:
         path: 'files/.gitconfig'
         force: true
+    ~/.gitignore_global:
+        path: 'files/.gitignore_global'
+        force: true
     ~/.zshrc:
         path: 'files/.zshrc'
         force: true
