@@ -3,13 +3,6 @@
 # Based on:
 # ~/.osx — https://mths.be/osx
 
-function CFPreferencesAppSynchronize() {
-    python - <<END
-from Foundation import CFPreferencesAppSynchronize
-CFPreferencesAppSynchronize('$1')
-END
-}
-
 # Ask for the administrator password upfront
 sudo -v
 
@@ -169,9 +162,10 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightC
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
-# Mouse: enable secondary click, smart zoom
+# Mouse: enable secondary click, smart zoom and mouse speed
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string TwoButton
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture -int 1
+defaults write -g com.apple.mouse.scaling -float 1.0
 
 # Disable “natural” (Lion-style) scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
@@ -351,8 +345,6 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	General -bool true \
 	OpenWith -bool true \
 	Privileges -bool true
-
-CFPreferencesAppSynchronize "com.apple.finder"
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
