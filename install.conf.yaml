@@ -21,7 +21,11 @@
     ~/.zshrc:
         path: 'files/.zshrc'
         force: true
+    ~/.npmrc:
+        path: 'files/.npmrc'
+        force: true
 - shell:
      - [source scripts/osx.sh]
      - [pip install --user powerline-status]
      - [source scripts/install_powerline_fonts.sh]
+     - [mkdir ~/npm]
