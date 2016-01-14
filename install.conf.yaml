@@ -29,3 +29,5 @@
      - [pip install --user powerline-status]
      - [source scripts/install_powerline_fonts.sh]
      - [mkdir ~/npm]
+     - [mkdir ~/bin]
+     - [source scripts/install_ack.sh]
