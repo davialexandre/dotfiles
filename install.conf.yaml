@@ -25,6 +25,7 @@
         path: 'files/.npmrc'
         force: true
 - shell:
+     - [git submodule update --init --recursive, Installing submodules]
      - [source scripts/osx.sh]
      - [pip install --user powerline-status]
      - [source scripts/install_powerline_fonts.sh]
