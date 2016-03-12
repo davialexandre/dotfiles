@@ -12,3 +12,5 @@
 	trustExitCode = true
 [color]
 	ui = true
+[status]
+    submodulesummary = 1
