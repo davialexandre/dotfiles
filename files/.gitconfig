@@ -14,3 +14,5 @@
 	ui = true
 [status]
     submodulesummary = 1
+[diff]
+    submodule = log
