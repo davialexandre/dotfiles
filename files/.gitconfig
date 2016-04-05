@@ -1,6 +1,7 @@
 [user]
 	name = Davi Alexandre
 	email = davi@davialexandre.com.br
+    signingkey = F8A9C056 
 [core]
 	excludesfile = /Users/davi/.gitignore_global
 	autocrlf = input
@@ -16,3 +17,9 @@
     submodulesummary = 1
 [diff]
     submodule = log
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+[alias]
+    cis = commit -S
