@@ -19,6 +19,8 @@
     submodule = log
 [commit]
     gpgsign = true
+[push]
+    default = simple
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean %f
