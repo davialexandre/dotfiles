@@ -3,6 +3,11 @@
 # Based on:
 # ~/.osx — https://mths.be/osx
 
+if [[ `uname` != 'Darwin' ]]; then
+    echo 'No macOS found. Exiting'
+    exit
+fi
+
 # Ask for the administrator password upfront
 sudo -v
 
