@@ -52,6 +52,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/npm/bin:$HOME/bin:$HOME/.composer/vendor/bin"
+export EDITOR='vim'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
