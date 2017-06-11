@@ -33,6 +33,9 @@
     ~/.oh-my-zsh/custom:
         path: 'files/.oh-my-zsh/custom'
         force: true
+    ~/.XCompose:
+        path: 'files/.XCompose'
+        force: true
 - shell:
      - [git submodule update --init --recursive, Installing submodules]
      - [bash scripts/osx.sh]
