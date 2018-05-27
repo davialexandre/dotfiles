@@ -37,6 +37,10 @@
         glob: true
         path: files/.oh-my-zsh/custom/themes/*
         force: true
+    ~/.config/:
+        glob: true
+        path: files/.config/*
+        force: true
 - shell:
      - [git submodule update --init --recursive, Installing submodules]
      - [bash scripts/osx.sh]
