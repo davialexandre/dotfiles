@@ -30,11 +30,12 @@
     ~/.tmux.conf:
         path: 'files/.tmux.conf'
         force: true
-    ~/.oh-my-zsh/custom:
-        path: 'files/.oh-my-zsh/custom'
-        force: true
     ~/.XCompose:
         path: 'files/.XCompose'
+        force: true
+    ~/.oh-my-zsh/custom/themes/:
+        glob: true
+        path: files/.oh-my-zsh/custom/themes/*
         force: true
 - shell:
      - [git submodule update --init --recursive, Installing submodules]
