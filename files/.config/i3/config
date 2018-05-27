@@ -158,3 +158,9 @@ bar {
         status_command i3status
         tray_output primary
 }
+
+# i3 Gaps
+# Removes the windows titles as i3-gaps doesn't like them
+for_window [class="^.*"] border pixel 3
+gaps inner 10
+gaps outer 5
