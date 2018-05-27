@@ -46,3 +46,4 @@
      - [mkdir ~/bin]
      - [mkdir ~/.gnupg]
      - [bash scripts/install_ack.sh]
+     - ["git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
