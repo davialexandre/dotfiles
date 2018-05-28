@@ -167,3 +167,6 @@ gaps outer 0
 
 # Compositor
 exec compton -b
+
+# Desktop background
+exec_always feh --bg-center ~/Imagens/wallpaper.png
