@@ -171,5 +171,12 @@ gaps outer 0
 # Compositor
 exec compton -b
 
+# Media control
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioStop exec playerctl stop
+
+
 # Desktop background
 exec_always feh --bg-center ~/Imagens/wallpaper.png
