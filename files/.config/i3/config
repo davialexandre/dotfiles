@@ -163,4 +163,7 @@ bar {
 # Removes the windows titles as i3-gaps doesn't like them
 for_window [class="^.*"] border pixel 3
 gaps inner 10
-gaps outer 5
+gaps outer 0
+
+# Compositor
+exec compton -b
