@@ -7,3 +7,6 @@
 [submodule "files/.vim/bundle/vim-fugitive"]
 	path = files/.vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "files/.config/polybar/polybar-scripts"]
+	path = files/.config/polybar/polybar-scripts
+	url = git@github.com:davialexandre/polybar-scripts.git
