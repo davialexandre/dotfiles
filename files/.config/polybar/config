@@ -9,8 +9,8 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background-alt = #444
 background = #00000000
+background-alt = #6798b7
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
@@ -54,7 +54,7 @@ modules-right = volume wlan eth temperature date powermenu
 tray-position = left
 tray-padding = 2
 ;tray-transparent = true
-;tray-background = #0063ff
+tray-background = ${colors.background-alt}
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -212,6 +212,7 @@ interface = wlp4s0
 interval = 3.0
 
 format-connected = "<ramp-signal> <label-connected>   "
+format-connected-background = ${colors.background-alt}
 format-connected-underline = #9f78e1
 label-connected = %essid%
 
@@ -221,7 +222,6 @@ format-disconnected = 直
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-foreground = ${colors.foreground-alt}
 ramp-signal-0 = 直
 ;ramp-signal-1 = 
 ;ramp-signal-2 = 
@@ -257,6 +257,7 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix = 
+format-background = ${colors.background-alt}
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
@@ -266,6 +267,7 @@ label = "  %date%, %time%  "
 type = internal/volume
 
 format-volume = "<ramp-volume> <label-volume>    "
+format-volume-background = ${colors.background-alt}
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
@@ -311,6 +313,7 @@ thermal-zone = 3
 warn-temperature = 60
 
 format = "<ramp> <label>  "
+format-background = ${colors.background-alt}
 format-underline = #f50a4d
 format-warn = "<ramp> <label-warn>  "
 format-warn-underline = ${self.format-underline}
@@ -334,6 +337,7 @@ format-spacing = 1
 
 label-open = "     "
 ;label-open-foreground = ${colors.primary}
+label-open-background = ${colors.background-alt}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
 label-separator = |
