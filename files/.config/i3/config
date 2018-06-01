@@ -181,7 +181,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ '-3%'
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ '+3%'
 
 # Desktop background
-exec_always feh --bg-center ~/Imagens/wallpaper.png
+exec_always feh --bg-fill ~/Imagens/wallpaper.png
 
 # Special windows handling
 for_window [title="Anki"] floating enable
