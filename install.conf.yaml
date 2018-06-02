@@ -9,9 +9,6 @@
     ~/.gvimrc:
         path: 'files/.gvimrc'
         force: true
-    ~/.bash_profile:
-        path: 'files/.bash_profile'
-        force: true
     ~/.gitconfig:
         path: 'files/.gitconfig'
         force: true
