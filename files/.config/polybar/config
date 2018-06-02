@@ -280,10 +280,8 @@ format-volume-background = ${colors.background-alt}
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
-format-muted-foreground = ${colors.foreground-alt}
-
-label-muted = 婢  muted
-label-muted-foreground = #66
+label-muted = "  ﱝ   "
+label-muted-background = ${colors.background-alt}
 
 ramp-volume-0 = "  奄"
 ramp-volume-1 = "  奔"
