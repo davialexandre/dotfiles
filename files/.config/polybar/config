@@ -106,11 +106,9 @@ format-connected-background = ${colors.background-alt}
 format-connected-underline = #9f78e1
 label-connected = %essid%
 
-format-disconnected = 直 
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+label-disconnected = 睊
+format-disconnected = "<label-disconnected>   "
+format-disconnected-background = ${colors.background-alt}
 
 ramp-signal-0 = 直
 
