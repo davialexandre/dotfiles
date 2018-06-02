@@ -202,7 +202,7 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ '+3%'
 exec_always feh --bg-fill ~/Imagens/wallpaper.png
 
 # Custom colors
-client.focused #6798b7 #6798b7 #ffffff #6798b7 #6798b7
+client.focused #dbdbdb #dbdbdb #242424 #dbdbdb #dbdbdb
 
 # Special windows handling
 for_window [title="Anki"] floating enable
