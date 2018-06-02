@@ -206,3 +206,4 @@ client.focused #6798b7 #6798b7 #ffffff #6798b7 #6798b7
 
 # Special windows handling
 for_window [title="Anki"] floating enable
+for_window [title="Gpick"] floating enable
