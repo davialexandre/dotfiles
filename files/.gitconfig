@@ -5,6 +5,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [difftool "sourcetree"]
 	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
 	path = 
