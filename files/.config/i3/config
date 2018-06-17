@@ -224,8 +224,8 @@ exec_always feh --bg-fill ~/Imagens/wallpaper.png
 
 # Custom colors
 client.focused #242424 #242424 #ffffff #242424 #242424
-client.focused_inactive #929292 #929292 #242424 #929292 #929292
-client.unfocused #c0c0c0 #ffffff #494949 #ffffff #ffffff
+client.focused_inactive #ffffff #ffffff #242424 #ffffff #ffffff
+client.unfocused #ffffff #ffffff #494949 #ffffff #ffffff
 client.placeholder #242424 #242424 #ffffff #242424 #242424
 
 # Special windows handling
