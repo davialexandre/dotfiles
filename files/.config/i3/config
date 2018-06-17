@@ -198,6 +198,23 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ '-3%'
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ '+3%'
 
+# Taking screenshots
+set $screenshots_folder '~/Imagens/Screenshots/'
+bindsym --release Print exec scrot -e 'mv $f $screenshots_folder'
+# Takes screenshot of single displays
+mode "screenshot" {
+    # Takes a screenshot of the first display. The delay is so that the mode name won't appear on the topbar
+    bindsym --release 1 exec scrot -d 1.5 -e 'convert -crop 1920x1980+0+0 $f $f && mv $f $screenshots_folder'; mode "default"
+    # Takes a screenshot of the second display
+    bindsym --release 2 exec scrot -d 1.5 -e 'convert -crop 1920x1980+1920+0 $f $f && mv $f $screenshots_folder'; mode "default"
+
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
+bindsym $mod+Print mode "screenshot"
+
+bindsym --release Shift+Print exec scrot -sb -e 'mv $f $screenshots_folder'
+
 # Desktop background
 exec_always feh --bg-fill ~/Imagens/wallpaper.png
 
