@@ -178,7 +178,7 @@ bindsym $mod+r mode "resize"
 #}
 
 #Polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 
 # i3 Gaps
 # Removes the windows titles as i3-gaps doesn't like them
@@ -186,8 +186,12 @@ for_window [class="^.*"] border pixel 2
 gaps inner 10
 gaps outer 0
 
-# Compositor
+# Autostartup ups
 exec compton -b
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id redshift-gtk
+exec --no-startup-id lxpolkit
+exec --no-startup-id numlockx
 
 # Media control
 bindsym XF86AudioPlay exec playerctl play-pause
