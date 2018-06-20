@@ -231,7 +231,7 @@ client.placeholder #242424 #242424 #ffffff #242424 #242424
 # Dropdown terminal
 for_window [window_role="dropdown"] move scratchpad
 for_window [window_role="dropdown"] resize set 960 450
-bindsym $mod+t [window_role="dropdown"] scratchpad show; [window_role="dropdown"] move position center
+bindsym $mod+dead_grave [window_role="dropdown"] scratchpad show; [window_role="dropdown"] move position center
 exec --no-startup-id gnome-terminal --role=dropdown
 
 # Special windows handling
