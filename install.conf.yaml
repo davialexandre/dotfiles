@@ -30,6 +30,9 @@
     ~/.XCompose:
         path: 'files/.XCompose'
         force: true
+    ~/.ackrc:
+        path: 'files/.ackrc'
+        force: true
     ~/.oh-my-zsh/custom/themes/:
         glob: true
         path: files/.oh-my-zsh/custom/themes/*
