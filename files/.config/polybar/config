@@ -47,7 +47,7 @@ font-3 = "RobotoMono Nerd Font:size=11;2"
 
 modules-left = player-mpris-tail
 modules-center = i3
-modules-right = volume wlan eth currency temperature openweathermap-simple date powermenu
+modules-right = volume eth currency temperature openweathermap-simple date powermenu
 
 tray-position = left
 tray-padding = 2
@@ -98,21 +98,6 @@ label-urgent = ${self.label}
 label-urgent-background = ${colors.alert}
 label-urgent-padding = ${self.label-focused-padding}
 
-[module/wlan]
-type = internal/network
-interface = wlp4s0
-interval = 3.0
-
-format-connected = "<ramp-signal> <label-connected>   "
-format-connected-background = ${colors.background-alt}
-label-connected = %essid%
-
-label-disconnected = 睊
-format-disconnected = "<label-disconnected>   "
-format-disconnected-background = ${colors.background-alt}
-
-ramp-signal-0 = 直
-
 [module/eth]
 type = internal/network
 interface = enp6s0
@@ -147,7 +132,7 @@ label = "  %date%, %time%  "
 [module/volume]
 type = internal/volume
 
-format-volume = "<ramp-volume> <label-volume>    "
+format-volume = "<ramp-volume> <label-volume>   "
 format-volume-background = ${colors.background-alt}
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
