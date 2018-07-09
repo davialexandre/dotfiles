@@ -10,6 +10,9 @@
     ~/.vimrc:
         path: 'files/.vimrc'
         force: true
+    ~/.ideavimrc:
+        path: 'files/.vimrc'
+        force: true
     ~/.gvimrc:
         path: 'files/.gvimrc'
         force: true
