@@ -47,7 +47,7 @@ font-3 = "RobotoMono Nerd Font:size=11;2"
 
 modules-left = player-mpris-tail
 modules-center = i3
-modules-right = volume wlan eth temperature openweathermap-simple date powermenu
+modules-right = volume wlan eth currency temperature openweathermap-simple date powermenu
 
 tray-position = left
 tray-padding = 2
@@ -172,10 +172,10 @@ label = %temperature%
 label-warn = %temperature%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
+ramp-0 = "   "
+ramp-1 = "   "
+ramp-2 = "   "
+ramp-3 = "   "
 
 [module/powermenu]
 type = custom/menu
@@ -219,6 +219,11 @@ type = custom/script
 exec = ~/.config/polybar/polybar-scripts/polybar-scripts/openweathermap-simple/openweathermap-simple.sh
 interval = 600
 label-background = ${colors.background-alt}
+
+[module/currency]
+type = custom/script
+exec = "currency-converter USD BRL"
+interval = 180
 
 [settings]
 screenchange-reload = true
