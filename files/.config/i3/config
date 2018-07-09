@@ -241,4 +241,7 @@ exec --no-startup-id gnome-terminal --role=dropdown
 # Special windows handling
 for_window [title="Anki"] floating enable
 for_window [title="Gpick"] floating enable
+for_window [title="^.* - Wunderlist$"] floating enable, resize set 960 600, move position center
+
+bindsym $mod+m [title="^.* - Wunderlist"] scratchpad show, move position center
 bindsym $mod+period sticky toggle
