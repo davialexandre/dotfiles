@@ -241,3 +241,4 @@ exec --no-startup-id gnome-terminal --role=dropdown
 # Special windows handling
 for_window [title="Anki"] floating enable
 for_window [title="Gpick"] floating enable
+bindsym $mod+period sticky toggle
