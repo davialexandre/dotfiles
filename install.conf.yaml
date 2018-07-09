@@ -1,5 +1,9 @@
 - clean: ['~']
 - link:
+    ~/bin:
+        glob: true
+        path: 'files/bin/*'
+        force: true
     ~/.vim:
         path: 'files/.vim/'
         force: true
@@ -47,7 +51,6 @@
      - [pip install --user powerline-status]
      - [bash scripts/install_powerline_fonts.sh]
      - [mkdir ~/npm]
-     - [mkdir ~/bin]
      - [mkdir ~/.gnupg]
      - [bash scripts/install_ack.sh]
      - ["git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]

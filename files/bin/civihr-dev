@@ -1,0 +1,22 @@
+#!/bin/bash
+
+function create_new_session {
+  tmux new-session -d -s 'civihr-dev'
+  tmux rename-window -n "main"
+  tmux split-window -h
+  tmux send-keys -t 0 C-z 'vagrant up' Enter
+  tmux send-keys -t 1 C-z 'cd hr17/sites/all/modules/civicrm/tools/extensions/civihr' Enter
+  tmux new-window -n "civihr-custom"
+  tmux send-keys -t 0 C-z 'cd /projetos/civihr/hr17/sites/all/modules/civihr-custom' Enter
+  tmux new-window -n "ssp-theme"
+  tmux send-keys -t 0 C-z 'cd /projetos/civihr/hr17/sites/all/themes/civihr_employee_portal_theme' Enter
+  tmux new-window -n "civihr-tasks"
+  tmux send-keys -t 0 C-z 'cd /projetos/civihr/hr17/sites/all/modules/civicrm/tools/extensions/civihr_tasks' Enter
+  tmux new-window -n "shoreditch"
+  tmux send-keys -t 0 C-z 'cd /projetos/civihr/hr17/sites/all/modules/civicrm/tools/extensions/org.civicrm.shoreditch' Enter
+  tmux select-window -t 'main'
+  tmux attach-session -t 'civihr-dev'
+}
+
+cd /projetos/civihr
+tmux attach-session -t 'civihr-dev' || create_new_session
