@@ -21,6 +21,7 @@ set ruler
 set laststatus=2
 set number
 set cursorline
+set relativenumber
 hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=darkgrey guifg=white
 
 " Move around splits with <c-hjkl>
