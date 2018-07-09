@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Installation:
+# Add this file somewhere in your PATH and make sure it is executable
+#
+# Show top contributors in the entire repo:
+#   git top-contributors 
+# 
+# Show only the top 10 contributors
+#   git top-contributors | head -10
+# 
+# Show the top contributors for an specific file/folder
+#   git top-contributors /path/to/file
+#
+# Show the top contributors since specific period
+#   git top-contributors --since='6 months ago'
+#
+set -e
+git log --format='%an' "$@" | sort | uniq -c | sort -rn
