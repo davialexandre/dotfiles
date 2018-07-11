@@ -23,15 +23,16 @@ font pango:Ubuntu 10
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# Apps start bindings
 bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+d exec rofi -show run
+bindsym $alt+Tab exec rofi -show window
+bindsym $mod+Shift+b exec google-chrome
+bindsym $mod+Menu exec gnome-calculator
+bindsym $mod+Shift+m exec gnome-terminal -e "htop"
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# Use rofi as app launcher and window switcher
-bindsym $mod+d exec rofi -show run
-bindsym $alt+Tab exec rofi -show window
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
