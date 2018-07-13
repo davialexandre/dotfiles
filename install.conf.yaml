@@ -11,7 +11,7 @@
         path: 'files/.vimrc'
         force: true
     ~/.ideavimrc:
-        path: 'files/.vimrc'
+        path: 'files/.ideavimrc'
         force: true
     ~/.gvimrc:
         path: 'files/.gvimrc'
