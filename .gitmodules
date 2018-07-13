@@ -16,3 +16,6 @@
 [submodule "files/.vim/bundle/vim-rhubarb"]
 	path = files/.vim/bundle/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "files/.vim/bundle/indentLine"]
+	path = files/.vim/bundle/indentLine
+	url = git@github.com:Yggdroot/indentLine.git

@@ -24,6 +24,8 @@ set cursorline
 set relativenumber
 hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=darkgrey guifg=white
 
+let g:indentLine_char = '┆'
+
 " Move around splits with <c-hjkl>
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
