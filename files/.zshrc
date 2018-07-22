@@ -41,17 +41,19 @@ ZSH_THEME="agnoster"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Set PATH. We need this here, before the plugins list, because some of (them thefuck, for example) look
+# for commands there 
+export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/npm/bin:$HOME/bin:$HOME/.composer/vendor/bin:/snap/bin:$HOME/.local/bin"
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx composer brew sublime sudo vagrant z zsh-wakatime dircycle httpie zsh-autosuggestions)
+plugins=(git osx composer brew sublime sudo vagrant z zsh-wakatime dircycle httpie zsh-autosuggestions thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/npm/bin:$HOME/bin:$HOME/.composer/vendor/bin:/snap/bin"
 export EDITOR='vim'
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -81,3 +83,5 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval $(thefuck --alias)
