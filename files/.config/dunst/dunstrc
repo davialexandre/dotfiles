@@ -145,8 +145,10 @@
     icon_position = left
 
     # Paths to default icons.
-    icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-
+    icon_path = /home/davi/.icons/Papirus/32x32/status/:/home/davi/.icons/Papirus/32x32/devices/:/home/davi/.icons/Papirus/32x32/apps/
+    
+    # Scale larger icons down to this size, set to 0 to disable
+    max_icon_size = 32
 [frame]
     width = 0
     color = "#242424"
