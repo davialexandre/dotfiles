@@ -9,7 +9,7 @@
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "files/.config/polybar/polybar-scripts"]
 	path = files/.config/polybar/polybar-scripts
-	url = git@github.com:davialexandre/polybar-scripts.git
+	url = https://github.com/davialexandre/polybar-scripts.git
 [submodule "files/.vim/bundle/gruvbox"]
 	path = files/.vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
@@ -18,4 +18,7 @@
 	url = https://github.com/tpope/vim-rhubarb.git
 [submodule "files/.vim/bundle/indentLine"]
 	path = files/.vim/bundle/indentLine
-	url = git@github.com:Yggdroot/indentLine.git
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "files/.vim/bundle/codi.vim"]
+	path = files/.vim/bundle/codi.vim
+	url = https://github.com/metakirby5/codi.vim.git
