@@ -256,4 +256,26 @@
 #    summary = *twitter.com*
 #    urgency = normal
 #
+
+[slack]
+    appname = Slack
+    new_icon = /home/davi/.icons/Papirus/32x32/apps/slack.svg 
+
+[slack-jenkins]
+    appname = Slack
+    body = "*Click * to see the build report"
+    new_icon = /home/davi/.icons/custom/32x32/jenkins.png
+
+[slack-jenkins-success]
+    appname = Slack
+    body  = "* built successfully. Time: *"
+    background = "#469b0d"
+
+[slack-jenkins-failure]
+    appname = Slack
+    body = "*Failed to build *"
+    background = "#bd2c40"
+    urgency = critical
+    timeout = 0
+
 # vim: ft=cfg

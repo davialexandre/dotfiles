@@ -49,6 +49,10 @@
         glob: true
         path: files/.config/*
         force: true
+    ~/.icons/:
+        glob: true
+        path: files/.icons/*
+        force: true
 - shell:
      - [git submodule update --init --recursive, Installing submodules]
      - [bash scripts/osx.sh]
