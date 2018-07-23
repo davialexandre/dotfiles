@@ -4,6 +4,7 @@
         glob: true
         path: 'files/bin/*'
         force: true
+        create: true
     ~/.vim:
         path: 'files/.vim/'
         force: true
