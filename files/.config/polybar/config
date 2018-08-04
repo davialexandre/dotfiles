@@ -49,7 +49,7 @@ font-5 = "RobotoMono Nerd Font:size=11;2:antialias=false"
 
 modules-left = player-mpris-tail
 modules-center = i3
-modules-right = volume eth currency temperature openweathermap-simple date powermenu
+modules-right = alsa eth currency temperature openweathermap-simple date powermenu
 
 tray-position = left
 tray-padding = 2
@@ -132,8 +132,8 @@ format-prefix-foreground = ${colors.foreground-alt}
 
 label = "  %date%, %time%  "
 
-[module/volume]
-type = internal/volume
+[module/alsa]
+type = internal/alsa
 
 format-volume = "<ramp-volume> <label-volume>   "
 format-volume-background = ${colors.background-alt}
@@ -156,8 +156,8 @@ format = "<ramp> <label>  "
 format-background = ${colors.background-alt}
 format-warn = "<ramp> <label-warn>  "
 
-label = %temperature%
-label-warn = %temperature%
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
 ramp-0 = "   "
