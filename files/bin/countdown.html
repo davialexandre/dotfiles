@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countdown</title>
+    <style>
+        * {
+            font-family: "Arial";
+            padding: 0;
+            margin: 0;
+            color: #242424;
+        }
+
+        #countdown {
+            margin: 10px;
+            border: 1px solid #acbac773;
+            border-radius: 5px;
+            box-shadow: 1px 3px 12px 0px rgba(169, 170, 173, 0.26);
+            text-align: center;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        input, button {
+            margin-top: 20px;
+            padding: 6px;
+            text-align: center;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        input {
+            width: 20px;
+            border: 1px solid #acbac773;
+        }
+
+        button {
+            background-color: #84dea1;
+            color: #fff;
+            border: 0;
+            margin-left: 5px;
+        }
+
+        #countdown_display {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 3em;
+            background-color: #acbac773;
+        }
+    </style>
+    <script>
+        function getCountdownSeconds() {
+            return getHoursInSeconds() + getMinutesInSeconds() + getSeconds();
+        }
+
+        function getHoursInSeconds() {
+            var hours = parseInt(document.getElementById('hours').value);
+            if (isNaN(hours)) {
+                hours = 0;
+            }
+            
+            return hours * 60 * 60;
+        }
+
+        function getMinutesInSeconds() {
+            var minutes = parseInt(document.getElementById('minutes').value);
+            if (isNaN(minutes)) {
+                minutes = 0;
+            }
+            
+            return minutes * 60;
+        }
+
+        function getSeconds() {
+            var seconds = parseInt(document.getElementById('seconds').value);
+            
+            return isNaN(seconds) ? 0 : seconds;
+        }
+
+        var countdownInterval;
+        var remainingSeconds  = 0;
+        function startCountdown() {
+            remainingSeconds = getCountdownSeconds();
+            displaySeconds();
+            countdownInterval = setInterval(updateCountdown, 1000);
+        }
+
+        function updateCountdown() {
+            remainingSeconds--;
+            displaySeconds();
+            if (remainingSeconds < 0) {
+                clearInterval(countdownInterval);
+            }
+        }
+
+        function displaySeconds() {
+            var date = new Date(null);
+            date.setSeconds(remainingSeconds);
+            document.getElementById('countdown_display').textContent = date.toISOString().substr(11, 8);
+        }
+    </script>
+</head>
+<body>
+    <div id="countdown">
+        <input type="text" maxlength="2" name="hours" id="hours" placeholder="00"> :
+        <input type="text" maxlength="2" name="minutes" id="minutes" placeholder="00"> :
+        <input type="text" maxlength="2" name="seconds" id="seconds" placeholder="00">
+        <button onclick="startCountdown();">Start</button>
+        <p id="countdown_display">00:00:00</p>
+    </div>
+</body>
+</html>
