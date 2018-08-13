@@ -1,0 +1,16 @@
+#!/bin/bash
+
+WORD=$2
+
+case $1 in
+    en) DICT_URL="https://dictionary.cambridge.org/dictionary/english/$WORD";;
+    pt) DICT_URL="https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/$WORD/";;
+    eo) DICT_URL="https://glosbe.com/eo/en/$WORD";;
+    en2eo) DICT_URL="https://glosbe.com/en/eo/$WORD";;
+    *) DICT_URL="";;
+esac
+
+# If chrome is not open, this will open and take you to the given URL,
+# otherwise, it will open a new tab in the closest open chrome window (i.e. 
+# the window closest to the current active workspace)
+google-chrome $DICT_URL
