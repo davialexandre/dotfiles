@@ -7,6 +7,7 @@ case $1 in
     pt) DICT_URL="https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/$WORD/";;
     eo) DICT_URL="https://glosbe.com/eo/en/$WORD";;
     en2eo) DICT_URL="https://glosbe.com/en/eo/$WORD";;
+    jp) DICT_URL="https://jisho.org/search/$WORD";;
     *) DICT_URL="";;
 esac
 
