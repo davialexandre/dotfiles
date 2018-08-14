@@ -1,0 +1,7 @@
+#!/bin/bash
+
+FROM=$1
+TO=$2
+WORD=$3
+URL="https://translate.google.com/#$FROM/$TO/$WORD"
+google-chrome $URL
