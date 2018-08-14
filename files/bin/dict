@@ -5,7 +5,7 @@ WORD=$2
 case $1 in
     en) DICT_URL="https://dictionary.cambridge.org/dictionary/english/$WORD";;
     pt) DICT_URL="https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/$WORD/";;
-    eo) DICT_URL="https://glosbe.com/eo/en/$WORD";;
+    eo) WORD=$(esperanto-special-chars $WORD) && DICT_URL="https://glosbe.com/eo/en/$WORD";;
     en2eo) DICT_URL="https://glosbe.com/en/eo/$WORD";;
     jp) DICT_URL="https://jisho.org/search/$WORD";;
     *) DICT_URL="";;

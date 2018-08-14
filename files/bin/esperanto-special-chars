@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "$@" | sed '
+s/cx/ĉ/g
+s/gx/ĝ/g
+s/hx/ĥ/g
+s/jx/ĵ/g
+s/sx/ŝ/g
+s/ux/ŭ/g'
