@@ -22,3 +22,6 @@
 [submodule "files/.vim/bundle/codi.vim"]
 	path = files/.vim/bundle/codi.vim
 	url = https://github.com/metakirby5/codi.vim.git
+[submodule "files/.oh-my-zsh/custom/themes/spaceship-prompt"]
+	path = files/.oh-my-zsh/custom/themes/spaceship-prompt
+	url = https://github.com/denysdovhan/spaceship-prompt.git

@@ -5,7 +5,9 @@ DEFAULT_USER=davi
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
+SPACESHIP_DIR_TRUNC_REPO=false
+SPACESHIP_DIR_TRUNC=2
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
