@@ -43,6 +43,10 @@ SPACESHIP_DIR_TRUNC=2
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# The private keys must be loaded before the plugins because
+# some of them need the keys here
+source ~/.private_keys
+
 # Set PATH. We need this here, before the plugins list, because some of (them thefuck, for example) look
 # for commands there 
 export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/npm/bin:$HOME/bin:$HOME/.composer/vendor/bin:/snap/bin:$HOME/.local/bin"
@@ -51,7 +55,7 @@ export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HO
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx composer brew sublime sudo vagrant z zsh-wakatime dircycle httpie zsh-autosuggestions thefuck tmux)
+plugins=(git osx composer brew sublime sudo vagrant z zsh-wakatime dircycle httpie zsh-autosuggestions thefuck tmux codestats)
 
 source $ZSH/oh-my-zsh.sh
 

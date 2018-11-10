@@ -25,3 +25,6 @@
 [submodule "files/.oh-my-zsh/custom/themes/spaceship-prompt"]
 	path = files/.oh-my-zsh/custom/themes/spaceship-prompt
 	url = https://github.com/denysdovhan/spaceship-prompt.git
+[submodule "files/.oh-my-zsh/custom/plugins/codestats"]
+	path = files/.oh-my-zsh/custom/plugins/codestats
+	url = https://gitlab.com/code-stats/code-stats-zsh.git
