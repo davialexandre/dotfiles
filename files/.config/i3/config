@@ -213,7 +213,7 @@ bindsym $mod+Print mode "screenshot"
 bindsym --release Shift+Print exec scrot -sb -e 'mv $f $screenshots_folder'
 
 # Desktop background
-exec_always feh --bg-fill ~/Imagens/wallpaper.png
+exec_always feh --bg-fill ~/wallpaper.png
 
 # Custom colors
 client.focused #242424 #242424 #ffffff #242424 #242424
