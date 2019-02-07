@@ -30,7 +30,7 @@ function convert_currency() {
     FROM_TO_STRING=$FROM_CURRENCY"_"$TO_CURRENCY
     URL="https://free.currencyconverterapi.com/api/v5/convert?q=$FROM_TO_STRING&compact=ultra"
     VALUE_FORMAT="%.$NUMBER_OF_DIGITS""f"
-    curl -s $URL | jq ".$FROM_TO_STRING" | xargs printf $VALUE_FORMAT
+    curl -s $URL 2> /dev/null | jq 'if .$FROM_TO_STRING then .USD else "" end' 2> /dev/null | xargs printf $VALUE_FORMAT
 }
 
 echo "$CURRENCY_ICON $(convert_currency)"
