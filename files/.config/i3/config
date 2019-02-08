@@ -31,6 +31,7 @@ bindsym $mod+Shift+b exec google-chrome
 bindsym $mod+Menu exec mate-calculator
 bindsym $mod+Shift+m exec gnome-terminal -e "htop"
 bindsym $mod+Shift+f exec gnome-terminal -e "ranger"
+bindsym $mod+Shift+s exec pavucontrol 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -232,6 +233,7 @@ exec --no-startup-id gnome-terminal --role=dropdown
 for_window [title="Anki"] floating enable
 for_window [title="Gpick"] floating enable
 for_window [title="^.* - Wunderlist$"] floating enable, resize set 960 600, move position center
+for_window [class="Pavucontrol"] floating enable, move position center
 
 bindsym $mod+m [title="^.* - Wunderlist"] scratchpad show, move position center
 bindsym $mod+period sticky toggle
