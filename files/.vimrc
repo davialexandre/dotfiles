@@ -2,11 +2,17 @@ python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
 
+if &term =~ '256color'
+    " disable Background Color Erase (BCE)
+    set t_ut=
+endif
+
 execute pathogen#infect()
 
 colorscheme gruvbox
 set background=dark
 
+set ttyfast
 set history=10000
 set autoindent
 set smartindent
