@@ -93,3 +93,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 eval $(thefuck --alias)
 
 source ~/.aliases
+
+which symfony-autocomplete > /dev/null && eval "$(symfony-autocomplete)"
+
