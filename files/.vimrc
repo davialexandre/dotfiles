@@ -34,3 +34,6 @@ nnoremap <C-l> <C-W>l
 nnoremap ¬ <C-W>>
 nnoremap ˙ <C-W><
 nnoremap <silent> <C-M> :nohlsearch<CR>
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
