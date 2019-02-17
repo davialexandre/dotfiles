@@ -198,7 +198,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ '-3%'
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ '+3%'
 
 # Taking screenshots
-set $screenshots_folder '~/Imagens/Screenshots/'
+set $screenshots_folder '~/Screenshots/'
 bindsym --release Print exec scrot -e 'mv $f $screenshots_folder'
 # Takes screenshot of single displays
 mode "screenshot" {
