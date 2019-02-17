@@ -6,7 +6,7 @@ Here is how it looks like at the moment:
 
 ![Desktop](img/screenshot.png)
 
-Wallpaper from [http://www.sbosma.com/](http://www.sbosma.com/)
+Wallpaper from [https://www.reddit.com/r/wallpapers/comments/7kdoyw/the_falcon/](https://www.reddit.com/r/wallpapers/comments/7kdoyw/the_falcon/)
 
 ## Installation
 
