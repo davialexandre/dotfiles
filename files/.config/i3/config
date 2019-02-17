@@ -218,10 +218,10 @@ bindsym --release Shift+Print exec scrot -sb -e 'mv $f $screenshots_folder'
 exec_always feh --bg-fill ~/wallpaper.png
 
 # Custom colors
-client.focused #242424 #242424 #ffffff #242424 #242424
-client.focused_inactive #ffffff #ffffff #242424 #ffffff #ffffff
-client.unfocused #ffffff #ffffff #494949 #ffffff #ffffff
-client.placeholder #242424 #242424 #ffffff #242424 #242424
+client.focused #a89984 #a89984 #282828 #a89984 #a89984
+client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
+client.unfocused #3c3836 #3c3836 #ebdbb2 #3c3836 #3c3836 #3c3836
+client.placeholder ##282828 #282828 #ebdbb2 #282828 #282828
 
 # Dropdown terminal
 for_window [window_role="dropdown"] move scratchpad

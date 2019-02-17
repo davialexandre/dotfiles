@@ -8,15 +8,15 @@
 ;=====================================================
 
 [colors]
-background = #c0ffffff
+background = #c0282828
 background-alt = ${self.background}
-foreground = #242424
+foreground = #ebdbb2
 foreground-alt = #555
 primary = #ffb52a
 secondary = #e60053
-alert = #bd2c40
+alert = #cc241d
 underline = ${self.foreground}
-underline-alt = #929292
+underline-alt = #7c6f64
 
 [bar/davi]
 monitor = ${env:MONITOR:HDMI-0}
@@ -53,7 +53,7 @@ modules-right = alsa eth currency temperature openweathermap-simple date powerme
 
 tray-position = left
 tray-padding = 2
-tray-background = ${colors.foreground}
+tray-background = ${colors.background}
 
 cursor-click = pointer
 cursor-scroll = ns-resize

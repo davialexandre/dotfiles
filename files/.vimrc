@@ -4,6 +4,9 @@ python3 del powerline_setup
 
 execute pathogen#infect()
 
+colorscheme gruvbox
+set background=dark
+
 set history=10000
 set autoindent
 set smartindent
@@ -22,8 +25,6 @@ set laststatus=2
 set number
 set cursorline
 set relativenumber
-hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=darkgrey guifg=white
-
 
 " Move around splits with <c-hjkl>
 nnoremap <C-j> <C-W>j
