@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# USAGE
+# translate <WORD> [TO] [FROM]
+# Examples:
+#   Translates "gravy" to Portuguese from English: translate gravy 
+#   Translates "gravy" to Spanish from English: translate gravy es
+#   Translates "porta" to English from Portuguese: translate porta en pt
+
+word=$1
+to=${2-pt}
+from=${3-en}
+
+url="https://translate.google.com/#view=home&op=translate&sl=$from&tl=$to&text=$word"
+
+google-chrome $url
