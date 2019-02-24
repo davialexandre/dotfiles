@@ -197,6 +197,12 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ '-3%'
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ '+3%'
 
+# Screen and Keyboard brightness control
+bindsym XF86MonBrightnessUp exec "brillo -A 5 && brillo -O"
+bindsym XF86MonBrightnessDown exec "brillo -U 5 && brillo -O"
+bindsym XF86KbdBrightnessUp exec "brillo -k -A 5 && brillo -kO"
+bindsym XF86KbdBrightnessDown exec "brillo -k -U 5 && brillo -kO"
+
 # Taking screenshots
 set $screenshots_folder '~/Screenshots/'
 bindsym --release Print exec scrot -e 'mv $f $screenshots_folder'
