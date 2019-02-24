@@ -18,8 +18,7 @@ alert = #cc241d
 underline = ${self.foreground}
 underline-alt = #7c6f64
 
-[bar/davi]
-monitor = ${env:MONITOR:HDMI-0}
+[bar/macbook]
 width = 100%
 height = 27
 radius = 0.0
@@ -49,7 +48,7 @@ font-5 = "RobotoMono Nerd Font:size=11;2:antialias=false"
 
 modules-left = player-mpris-tail
 modules-center = i3
-modules-right = alsa eth currency temperature openweathermap-simple date powermenu
+modules-right = alsa eth currency temperature openweathermap-simple battery date
 
 tray-position = left
 tray-padding = 2
@@ -59,6 +58,15 @@ cursor-click = pointer
 cursor-scroll = ns-resize
 
 locale = "pt_BR.UTF-8"
+
+temperature-thermal-zone = 1
+
+[bar/desktop]
+inherit = bar/macbook
+monitor = ${env:MONITOR:HDMI-0}
+modules-right = alsa eth currency temperature openweathermap-simple date
+
+temperature-thermal-zone = 3
 
 [module/i3]
 type = internal/i3
@@ -100,6 +108,22 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = ${self.label}
 label-urgent-background = ${colors.alert}
 label-urgent-padding = ${self.label-focused-padding}
+
+[module/battery]
+type = internal/battery
+
+time-format = %H:%M
+
+label-discharging = "%percentage%% %time%" 
+label-charging = "    %percentage%%" 
+
+format-discharging = <ramp-capacity> <label-discharging>
+
+ramp-capacity-0 = "  "
+ramp-capacity-1 = "  "
+ramp-capacity-2 = "  "
+ramp-capacity-3 = "  "
+ramp-capacity-4 = "  "
 
 [module/eth]
 type = internal/network
@@ -149,7 +173,7 @@ ramp-volume-2 = "  墳"
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 3
+thermal-zone = ${root.temperature-thermal-zone}
 warn-temperature = 60
 
 format = "<ramp> <label>  "
