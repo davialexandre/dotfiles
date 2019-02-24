@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # USAGE
-# translate <WORD> [TO] [FROM]
+# translate <WORD> [FROM] [TO]
 # Examples:
-#   Translates "gravy" to Portuguese from English: translate gravy 
-#   Translates "gravy" to Spanish from English: translate gravy es
-#   Translates "porta" to English from Portuguese: translate porta en pt
+#   Translates "gravy" from English to Portuguese: translate gravy 
+#   Translates "salsa" from Spanish to Portuguese: translate salsa es
+#   Translates "porta" from Portuguese to English: translate porta pt en
 
 word=$1
-to=${2-pt}
-from=${3-en}
+from=${2-en}
+to=${3-pt}
 
 url="https://translate.google.com/#view=home&op=translate&sl=$from&tl=$to&text=$word"
 
