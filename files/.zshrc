@@ -45,7 +45,7 @@ SPACESHIP_DIR_TRUNC=2
 
 # The private keys must be loaded before the plugins because
 # some of them need the keys here
-test -e ~/.private_keys && source ~/.private_keys
+test -e ~/.private_env && source ~/.private_env
 
 # Set PATH. We need this here, before the plugins list, because some of (them thefuck, for example) look
 # for commands there 
