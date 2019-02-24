@@ -41,6 +41,9 @@
     ~/.ackrc:
         path: 'files/.ackrc'
         force: true
+    ~/.aliases:
+        path: 'files/.aliases'
+        force: true
     ~/.oh-my-zsh/custom/themes/:
         glob: true
         path: files/.oh-my-zsh/custom/themes/*
