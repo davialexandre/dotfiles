@@ -45,7 +45,7 @@ SPACESHIP_DIR_TRUNC=2
 
 # The private keys must be loaded before the plugins because
 # some of them need the keys here
-source ~/.private_keys
+test -e ~/.private_keys && source ~/.private_keys
 
 # Set PATH. We need this here, before the plugins list, because some of (them thefuck, for example) look
 # for commands there 
@@ -92,7 +92,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 eval $(thefuck --alias)
 
-source ~/.aliases
+test -e ~/.aliases && source ~/.aliases
 
 which symfony-autocomplete > /dev/null && eval "$(symfony-autocomplete)"
 
