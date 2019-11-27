@@ -1,3 +1,4 @@
 --type-set=csv:ext:csv
 --type-add=sql:ext:mysql
 --type-add=logs:ext:log
+--ignore-dir=.idea
