@@ -240,6 +240,16 @@ for_window [window_role="dropdown"] resize set 960 550
 bindsym $mod+dead_grave [window_role="dropdown"] scratchpad show; [window_role="dropdown"] move position center
 exec --no-startup-id gnome-terminal --role=dropdown
 
+# Zeal (Quick documentation)
+exec --no-startup-id zeal
+for_window [class="Zeal"] move scratchpad
+bindsym $mod+z [class="Zeal"] scratchpad show, move position center
+
+# Note Station 
+exec --no-startup-id synology-note-station
+for_window [title="Synology Note Station"] move scratchpad
+bindsym $mod+n [title="Synology Note Station"] scratchpad show, move position center
+
 # Special windows handling
 for_window [title="Anki"] floating enable
 for_window [title="Gpick"] floating enable
