@@ -1,3 +1,12 @@
 alias d="cd ~/Downloads"
 alias p="cd /projetos"
-
+alias exa="exa --header --long --all --group"
+alias scc="php bin/console cache:clear"
+alias ssu="php bin/console doctrine:schema:update --force"
+alias sre="php bin/console make:entity --regenerate"
+alias upp="sudo apt -y update && sudo apt -y dist-upgrade"
+alias ggpush!='git push origin $(git_current_branch) --force'
+alias download-station="synology-app download"
+alias file-station="synology-app file"
+alias note-station="synology-app note"
+alias video-station="synology-app video"
