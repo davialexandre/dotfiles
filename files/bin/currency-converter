@@ -1,36 +1,13 @@
 #!/bin/bash
 
 # Note: This script was created to be used mainly as a Polybar module
-# Convert 1 USD to BRL:
-#   currency-converter USD BRL
-# 
-# Convert 1 USD to GBP and use a custom icon
-#   currency-converter USD GBP ￡
-# 
-# Convert  1 USD to JPY and but only show number up to 2 digits
-#   currency-converter USD JPY Y 2
-#
-# Check https://free.currencyconverterapi.com/ for a list of supported currencies
-#
-FROM_CURRENCY=$1
-TO_CURRENCY=$2
-if [ $# -lt 3 ]; then 
-    CURRENCY_ICON=
-else
-    CURRENCY_ICON=$3
-fi
-
-if [ $# -lt 4 ]; then
-    NUMBER_OF_DIGITS=3
-else
-    NUMBER_OF_DIGITS=$4
-fi
+CURRENCY_ICON=
+NUMBER_OF_DIGITS=3
 
 function convert_currency() {
-    FROM_TO_STRING=$FROM_CURRENCY"_"$TO_CURRENCY
-    URL="https://free.currencyconverterapi.com/api/v5/convert?q=$FROM_TO_STRING&compact=ultra"
     VALUE_FORMAT="%.$NUMBER_OF_DIGITS""f"
-    curl -s $URL 2> /dev/null | jq 'if .$FROM_TO_STRING then .USD else "" end' 2> /dev/null | xargs printf $VALUE_FORMAT
+    URL="https://api.cotacoes.uol.com/currency/summary?currency=1&fields==id,name,askvalue"
+    curl -s $URL 2> /dev/null | jq 'if .docs[].askvalue then .docs[].askvalue else "" end' 2> /dev/null | xargs printf $VALUE_FORMAT
 }
 
 echo "$CURRENCY_ICON $(convert_currency)"
