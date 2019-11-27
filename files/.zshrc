@@ -8,6 +8,12 @@ DEFAULT_USER=davi
 ZSH_THEME="spaceship"
 SPACESHIP_DIR_TRUNC_REPO=false
 SPACESHIP_DIR_TRUNC=2
+SPACESHIP_PHP_SHOW=false
+SPACESHIP_PACKAGE_SHOW=false
+SPACESHIP_NODE_SHOW=false
+SPACESHIP_RUBY_SHOW=false
+SPACESHIP_RUST_SHOW=false
+SPACESHIP_DOCKER_SHOW=false
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
