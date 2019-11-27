@@ -36,6 +36,8 @@ bindsym $mod+Shift+s exec pavucontrol
 # kill focused window
 bindsym $mod+Shift+q kill
 
+bindsym $mod+Shift+Escape exec --no-startup-id lock-and-suspend 
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
