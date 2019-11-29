@@ -7,6 +7,8 @@ if &term =~ '256color'
     set t_ut=
 endif
 
+set rtp+=~/fzf
+
 execute pathogen#infect()
 
 colorscheme gruvbox
@@ -41,5 +43,6 @@ nnoremap ¬ <C-W>>
 nnoremap ˙ <C-W><
 nnoremap <silent> <C-M> :nohlsearch<CR>
 
+nnoremap <C-p> :Files<Cr>
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
