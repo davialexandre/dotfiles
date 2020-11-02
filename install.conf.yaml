@@ -1,3 +1,8 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+
 - clean: ['~']
 - link:
     ~/bin:
@@ -5,48 +10,20 @@
         path: 'files/bin/*'
         force: true
         create: true
-    ~/.vim:
-        path: 'files/.vim/'
-        force: true
-    ~/.vimrc:
-        path: 'files/.vimrc'
-        force: true
-    ~/.ideavimrc:
-        path: 'files/.ideavimrc'
-        force: true
-    ~/.gvimrc:
-        path: 'files/.gvimrc'
-        force: true
-    ~/.gitconfig:
-        path: 'files/.gitconfig'
-        force: true
-    ~/.gitignore_global:
-        path: 'files/.gitignore_global'
-        force: true
-    ~/.zshrc:
-        path: 'files/.zshrc'
-        force: true
-    ~/.npmrc:
-        path: 'files/.npmrc'
-        force: true
-    ~/.gnupg/gpg.conf:
-        path: 'files/.gnupg/gpg.conf'
-        force: true
-    ~/.tmux.conf:
-        path: 'files/.tmux.conf'
-        force: true
-    ~/.XCompose:
-        path: 'files/.XCompose'
-        force: true
-    ~/.ackrc:
-        path: 'files/.ackrc'
-        force: true
-    ~/.aliases:
-        path: 'files/.aliases'
-        force: true
-    ~/.functions:
-        path: 'files/.functions'
-        force: true
+    ~/.vim: files/.vim/
+    ~/.vimrc: files/.vimrc
+    ~/.ideavimrc: files/.ideavimrc
+    ~/.gvimrc: files/.gvimrc
+    ~/.gitconfig: files/.gitconfig
+    ~/.gitignore_global: files/.gitignore_global
+    ~/.zshrc: files/.zshrc
+    ~/.npmrc: files/.npmrc
+    ~/.gnupg/gpg.conf: files/.gnupg/gpg.conf
+    ~/.tmux.conf: files/.tmux.conf
+    ~/.XCompose: files/.XCompose
+    ~/.ackrc: files/.ackrc
+    ~/.aliases: files/.aliases 
+    ~/.functions: files/.functions
     ~/.oh-my-zsh/custom/themes/:
         glob: true
         path: files/.oh-my-zsh/custom/themes/*
