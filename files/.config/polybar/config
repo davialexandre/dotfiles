@@ -8,7 +8,7 @@
 ;=====================================================
 
 [colors]
-background = #c0282828
+background = #282828
 background-alt = ${self.background}
 foreground = #ebdbb2
 foreground-alt = #555
