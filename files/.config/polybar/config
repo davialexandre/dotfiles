@@ -63,7 +63,16 @@ temperature-thermal-zone = 1
 
 [bar/desktop]
 inherit = bar/macbook
-monitor = ${env:MONITOR:HDMI-0}
+monitor = ${env:MONITOR:DP-2}
+height = 40
+
+font-0 = fixed:pixelsize=14;1
+font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
+font-2 = siji:pixelsize=15;1
+font-3 = "Noto Sans CJK JP:size=15;1"
+font-4 = "Symbola:size=14;1"
+font-5 = "RobotoMono Nerd Font:size=15;2:antialias=false"
+
 modules-right = alsa eth currency temperature openweathermap-simple date
 
 temperature-thermal-zone = 3
