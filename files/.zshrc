@@ -61,7 +61,7 @@ export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HO
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx composer brew sublime sudo vagrant z wakatime dircycle httpie zsh-autosuggestions thefuck tmux codestats zsh_reload)
+plugins=(git osx composer brew sublime sudo vagrant z wakatime dircycle httpie zsh-autosuggestions thefuck tmux codestats zsh_reload docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
