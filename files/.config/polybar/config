@@ -75,7 +75,7 @@ font-5 = "RobotoMono Nerd Font:size=15;2:antialias=false"
 
 modules-right = alsa eth currency temperature openweathermap-simple date
 
-temperature-thermal-zone = 3
+temperature-thermal-zone = 2
 
 [module/i3]
 type = internal/i3
