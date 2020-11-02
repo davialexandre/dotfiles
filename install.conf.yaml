@@ -74,3 +74,5 @@
      - ["git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
      - ["git clone https://github.com/junegunn/fzf.vim.git ~/fzf"]
      - ["cd ~/fzf && ./install"]
+     - ["git clone https://github.com/bigH/git-fuzzy.git ~/Applications/git-fuzzy"]
+     - ["wget https://raw.githubusercontent.com/sdushantha/fontpreview/master/fontpreview -O ~/bin/fontpreview && chmod +x ~/bin/fontpreview"]
