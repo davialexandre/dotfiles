@@ -44,6 +44,9 @@
     ~/.aliases:
         path: 'files/.aliases'
         force: true
+    ~/.functions:
+        path: 'files/.functions'
+        force: true
     ~/.oh-my-zsh/custom/themes/:
         glob: true
         path: files/.oh-my-zsh/custom/themes/*
