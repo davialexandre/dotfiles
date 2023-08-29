@@ -84,15 +84,15 @@ label = %icon%
 index-sort = true
 wrapping-scroll = false
 
-ws-icon-0 = "1: www;"
+ws-icon-0 = "1: www;󰖟"
 ws-icon-1 = "2: terminal;"
-ws-icon-2 = "3: music;"
+ws-icon-2 = "3: music;󰎆"
 ws-icon-3 = "4: code;"
 ws-icon-4 = "5: chat;"
-ws-icon-5 = "6: notes;ﴬ"
+ws-icon-5 = "6: notes;󱓧"
 ws-icon-7 = "7: organization;"
 ws-icon-6 = "9: games;"
-ws-icon-default = "缾"
+ws-icon-default = ""
 
 label-mode-padding = 2
 label-mode-foreground = #000
@@ -124,8 +124,8 @@ type = internal/battery
 
 time-format = %H:%M
 
-label-discharging = "%percentage%% %time%" 
-label-charging = "    %percentage%%" 
+label-discharging = "%percentage%% %time%"
+label-charging = "    %percentage%%"
 
 format-discharging = <ramp-capacity> <label-discharging>
 
@@ -160,7 +160,7 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = ""
 format-background = ${colors.background-alt}
 format-prefix-foreground = ${colors.foreground-alt}
 
@@ -174,12 +174,12 @@ format-volume-background = ${colors.background-alt}
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = "  ﱝ   "
+label-muted = "  󰝟 "
 label-muted-background = ${colors.background-alt}
 
-ramp-volume-0 = "  奄"
-ramp-volume-1 = "  奔"
-ramp-volume-2 = "  墳"
+ramp-volume-0 = "  "
+ramp-volume-1 = "  "
+ramp-volume-2 = "  "
 
 [module/temperature]
 type = internal/temperature
