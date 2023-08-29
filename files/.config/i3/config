@@ -192,6 +192,7 @@ exec --no-startup-id lxpolkit
 exec --no-startup-id numlockx
 exec --no-startup-id clipit
 exec --no-startup-id nm-applet
+exec --no-startup-id synology-drive
 
 # Media control
 bindsym XF86AudioPlay exec playerctl play-pause
