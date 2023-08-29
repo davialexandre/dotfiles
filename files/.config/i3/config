@@ -209,21 +209,8 @@ bindsym XF86KbdBrightnessUp exec "brillo -k -A 5 && brillo -kO"
 bindsym XF86KbdBrightnessDown exec "brillo -k -U 5 && brillo -kO"
 
 # Taking screenshots
-set $screenshots_folder '~/Screenshots/'
-bindsym --release Print exec scrot -e 'mv $f $screenshots_folder'
-# Takes screenshot of single displays
-mode "screenshot" {
-    # Takes a screenshot of the first display. The delay is so that the mode name won't appear on the topbar
-    bindsym --release 1 exec scrot -d 1.5 -e 'convert -crop 3840x2160+0+0 $f $f && mv $f $screenshots_folder'; mode "default"
-    # Takes a screenshot of the second display
-    bindsym --release 2 exec scrot -d 1.5 -e 'convert -crop 1920x1980+3840+0 $f $f && mv $f $screenshots_folder'; mode "default"
-
-    bindsym Escape mode "default"
-    bindsym Return mode "default"
-}
-bindsym $mod+Print mode "screenshot"
-
-bindsym --release Shift+Print exec scrot -sb -e 'mv $f $screenshots_folder'
+bindsym --release Print exec shutter
+bindsym --release Shift+Print exec shutter -s
 
 # Desktop background
 exec_always feh --bg-fill ~/wallpaper.png
