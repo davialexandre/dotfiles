@@ -17,17 +17,15 @@
     ~/.gitconfig: files/.gitconfig
     ~/.gitignore_global: files/.gitignore_global
     ~/.zshrc: files/.zshrc
-    ~/.npmrc: files/.npmrc
     ~/.gnupg/gpg.conf: files/.gnupg/gpg.conf
     ~/.tmux.conf: files/.tmux.conf
     ~/.XCompose: files/.XCompose
-    ~/.ackrc: files/.ackrc
-    ~/.aliases: files/.aliases 
+    ~/.aliases: files/.aliases
     ~/.functions: files/.functions
     ~/.oh-my-zsh/custom/themes/:
         glob: true
         path: files/.oh-my-zsh/custom/themes/*
-        force: true 
+        force: true
     ~/.oh-my-zsh/custom/plugins/:
         glob: true
         path: files/.oh-my-zsh/custom/plugins/*
@@ -42,10 +40,6 @@
         force: true
 - shell:
      - [git submodule update --init --recursive, Installing submodules]
-     - [bash scripts/osx.sh]
-     - [pip install --user powerline-status]
-     - [bash scripts/install_powerline_fonts.sh]
-     - [mkdir ~/npm]
      - [mkdir ~/.gnupg]
      - [bash scripts/install_ack.sh]
      - ["git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
