@@ -19,7 +19,7 @@
     ~/.zshrc: files/.zshrc
     ~/.gnupg/gpg.conf: files/.gnupg/gpg.conf
     ~/.tmux.conf: files/.tmux.conf
-    ~/.XCompose: files/.XCompose
+    ~/.Xresources: files/.Xresources
     ~/.aliases: files/.aliases
     ~/.functions: files/.functions
     ~/.oh-my-zsh/custom/themes/:

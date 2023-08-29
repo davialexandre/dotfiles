@@ -1,0 +1,5 @@
+# The lower the DPI, the smaller things will look like. This also applies for the text in i3 windows/messages
+Xft.dpi: 110
+# Avoids having huge mouse pointers
+Xcursor.size: 20
+Xcursor.theme: DMZ-White
