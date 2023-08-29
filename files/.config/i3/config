@@ -191,7 +191,7 @@ exec --no-startup-id numlockx
 exec --no-startup-id copyq
 exec --no-startup-id nm-applet
 exec --no-startup-id synology-drive
-exec --no-startup-id ulauncher
+exec --no-startup-id ulauncher --no-window-shadow
 
 # Media control
 bindsym XF86AudioPlay exec playerctl play-pause
