@@ -8,9 +8,9 @@
 ;=====================================================
 
 [colors]
-background = #282828
+background = #282c34
 background-alt = ${self.background}
-foreground = #ebdbb2
+foreground = #abb2bf
 foreground-alt = #555
 primary = #ffb52a
 secondary = #e60053

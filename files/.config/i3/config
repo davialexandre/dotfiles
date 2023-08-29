@@ -229,7 +229,7 @@ bindsym --release Shift+Print exec scrot -sb -e 'mv $f $screenshots_folder'
 exec_always feh --bg-fill ~/wallpaper.png
 
 # Custom colors
-client.focused #a89984 #a89984 #282828 #a89984 #a89984
+client.focused #abb2bf #abb2bf #282828 #abb2bf #abb2bf
 client.focused_inactive #282828 #282828 #ebdbb2 #282828 #282828
 client.unfocused #3c3836 #3c3836 #ebdbb2 #3c3836 #3c3836 #3c3836
 client.placeholder ##282828 #282828 #ebdbb2 #282828 #282828
