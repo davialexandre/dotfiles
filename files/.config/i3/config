@@ -177,10 +177,14 @@ for_window [class="^.*"] border pixel 2
 gaps inner 10
 gaps outer 0
 
-for_window [title="Ulauncher window title"] border pixel 0
+# Ulauncher
 for_window [title="Ulauncher Preferences"] border pixel 0, floating enable, move position center
 
+# Fontpreview
 for_window [instance="fontpreview"] floating enable
+
+# Gnome Calendar
+for_window [class="Gnome-calendar"] floating enable
 
 # Autostartup ups
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -232,16 +236,8 @@ exec --no-startup-id zeal
 for_window [class="Zeal"] move scratchpad
 bindsym $mod+z [class="Zeal"] scratchpad show, move position center
 
-# Note Station
-exec --no-startup-id synology-note-station
-for_window [title="Synology Note Station"] move scratchpad
-bindsym $mod+n [title="Synology Note Station"] scratchpad show, move position center
-
 # Special windows handling
-for_window [title="Anki"] floating enable
 for_window [title="Gpick"] floating enable
-for_window [title="^.* - Wunderlist$"] floating enable, resize set 960 600, move position center
 for_window [class="Pavucontrol"] floating enable, move position center
 
-bindsym $mod+m [title="^.* - Wunderlist"] scratchpad show, move position center
 bindsym $mod+period sticky toggle
