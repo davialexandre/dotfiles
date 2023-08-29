@@ -185,7 +185,6 @@ for_window [title="Ulauncher Preferences"] border pixel 0, floating enable, move
 for_window [instance="fontpreview"] floating enable
 
 # Autostartup ups
-exec compton -b
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id rescuetime
 exec --no-startup-id redshift-gtk
