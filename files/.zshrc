@@ -67,6 +67,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export EDITOR='vim'
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
