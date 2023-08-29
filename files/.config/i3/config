@@ -31,7 +31,8 @@ bindsym $mod+Shift+b exec firefox
 bindsym $mod+Menu exec mate-calculator
 bindsym $mod+Shift+m exec gnome-terminal -e "htop"
 bindsym $mod+Shift+f exec gnome-terminal -e "ranger"
-bindsym $mod+Shift+s exec pavucontrol 
+bindsym $mod+Shift+s exec pavucontrol
+bindsym $mod+Shift+g exec chromium
 
 # kill focused window
 bindsym $mod+Shift+q kill
