@@ -181,6 +181,8 @@ gaps outer 0
 for_window [title="Ulauncher window title"] border pixel 0
 for_window [title="Ulauncher Preferences"] border pixel 0, floating enable, move position center
 
+for_window [instance="fontpreview"] floating enable
+
 # Autostartup ups
 exec compton -b
 exec_always --no-startup-id ~/.config/polybar/launch.sh
