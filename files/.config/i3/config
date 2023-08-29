@@ -134,8 +134,8 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Multimonitor bindings
-bindsym $mod+bracketleft move workspace to left
-bindsym $mod+bracketright move workspace to right
+bindsym $mod+bracketleft move workspace to output left
+bindsym $mod+bracketright move workspace to output right
 
 # Scratchpad
 bindsym $mod+Shift+minus move scratchpad
