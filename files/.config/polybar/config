@@ -53,14 +53,14 @@ locale = "pt_BR.UTF-8"
 [bar/desktop]
 inherit = bar/base
 monitor = ${env:MONITOR:DP-2}
-height = 40
+height = 30
 
-font-0 = fixed:pixelsize=14;1
-font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
-font-2 = siji:pixelsize=15;1
-font-3 = "Noto Sans CJK JP:size=15;1"
-font-4 = "Symbola:size=14;1"
-font-5 = "RobotoMono Nerd Font:size=15;2:antialias=false"
+font-0 = fixed:pixelsize=13;1
+font-1 = unifont:fontformat=truetype:size=13:antialias=false;0
+font-2 = siji:pixelsize=13;1
+font-3 = "Noto Sans CJK JP:size=13;1"
+font-4 = "Symbola:size=13;1"
+font-5 = "RobotoMono Nerd Font:size=13;2:antialias=false"
 
 modules-right = alsa currency temperature openweathermap-simple date
 
