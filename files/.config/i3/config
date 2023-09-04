@@ -201,7 +201,7 @@ exec --no-startup-id synology-drive
 exec --no-startup-id ulauncher --no-window-shadow
 
 # Media control
-bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPlay exec playerctl -a play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioStop exec playerctl stop
