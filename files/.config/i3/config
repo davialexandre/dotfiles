@@ -31,6 +31,7 @@ bindsym $mod+Shift+m exec gnome-terminal -e "htop"
 bindsym $mod+n exec nautilus -w
 bindsym $mod+Shift+s exec pavucontrol
 bindsym $mod+Shift+g exec chromium
+bindsym $mod+F12 exec gnome-terminal --role=about --  bash -c "neofetch && read"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -188,6 +189,9 @@ for_window [class="Gnome-calendar"] floating enable
 
 # Gnome Calculator
 for_window [class="Gnome-calculator"] floating enable
+
+# Neofetch "about" window
+for_window [window_role="about"] floating enable
 
 # Autostartup ups
 exec_always --no-startup-id ~/.config/polybar/launch.sh
