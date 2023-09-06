@@ -32,6 +32,7 @@ bindsym $mod+n exec nautilus -w
 bindsym $mod+Shift+s exec pavucontrol
 bindsym $mod+Shift+g exec chromium
 bindsym $mod+F12 exec gnome-terminal --role=about --  bash -c "neofetch && read"
+bindsym $mod+Shift+p exec firefox --private-window
 
 # kill focused window
 bindsym $mod+Shift+q kill
