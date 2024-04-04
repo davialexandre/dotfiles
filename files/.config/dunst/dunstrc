@@ -183,7 +183,7 @@
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".
-    history = ctrl+grave
+    history = ctrl+period
 
     # Context menu.
     context = ctrl+shift+period
@@ -262,4 +262,16 @@
 [slack]
     appname = Slack
     new_icon = 96x96/apps/slack
+
+[phpstorm-tests-failed]
+    appname = PhpStorm
+    summary = Tests Failed
+    background = "#e06c75"
+    foreground = "#282c34"
+    timeout = 0
+
+[firefox-todoist]
+    appname = Firefox
+    new_icon = 96x96/apps/todoist
+    body = *Todoist Reminder*
 # vim: ft=cfg
