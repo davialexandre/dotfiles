@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Note: This script was created to be used mainly as a Polybar module
-CURRENCY_ICON=
+CURRENCY_ICON="$"
 NUMBER_OF_DIGITS=3
 
 function convert_currency() {
