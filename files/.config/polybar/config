@@ -61,10 +61,11 @@ font-2 = siji:pixelsize=13;1
 font-3 = "Noto Sans CJK JP:size=13;1"
 font-4 = "Symbola:size=13;1"
 font-5 = "RobotoMono Nerd Font:size=13;2:antialias=false"
+font-6 = "NotoEmoji:scale=10"
 
 modules-right = pulseaudio currency temperature openweathermap-simple date
 
-temperature-thermal-zone = 2
+temperature-thermal-zone = 3
 
 [module/i3]
 type = internal/i3
@@ -159,6 +160,8 @@ ramp-volume-0 = "  "
 ramp-volume-1 = "  "
 ramp-volume-2 = "  "
 
+click-right = pavucontrol
+
 [module/temperature]
 type = internal/temperature
 thermal-zone = ${root.temperature-thermal-zone}
@@ -188,7 +191,7 @@ click-middle = ~/.config/polybar/polybar-scripts/polybar-scripts/player-mpris-ta
 [module/openweathermap-simple]
 type = custom/script
 exec = ~/.config/polybar/polybar-scripts/polybar-scripts/openweathermap-simple/openweathermap-simple.sh
-interval = 600
+interval = 300
 label-background = ${colors.background-alt}
 
 [module/currency]
