@@ -109,3 +109,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source /home/davi/.config/broot/launcher/bash/br
+
+eval "$(navi widget zsh)"
+eval "$(atuin init zsh --disable-up-arrow)"
