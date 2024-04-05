@@ -1,9 +1,16 @@
 {
-    "com.github.carlosmape.ulauncher-calendar": {
-        "id": "com.github.carlosmape.ulauncher-calendar",
-        "url": "https://github.com/Carlosmape/ulauncher-calendar",
-        "updated_at": "2023-08-29T20:39:50.760975",
-        "last_commit": "36e6d2f9b238a7723525522bd373a22626cf3be5",
-        "last_commit_time": "2022-10-31T15:47:41"
+    "com.github.ulauncher.ulauncher-emoji": {
+        "id": "com.github.ulauncher.ulauncher-emoji",
+        "url": "https://github.com/Ulauncher/ulauncher-emoji",
+        "updated_at": "2023-08-29T21:09:52.905135",
+        "last_commit": "4c6af50d1c9a24d5aad2c597634ff0c634972a5c",
+        "last_commit_time": "2021-08-08T19:19:59"
+    },
+    "com.github.qcasey.ulauncher-homeassistant": {
+        "id": "com.github.qcasey.ulauncher-homeassistant",
+        "url": "https://github.com/qcasey/ulauncher-homeassistant",
+        "updated_at": "2024-02-28T10:30:05.726077",
+        "last_commit": "8a187aa6bdff8700cdbfbc0371b98dda33b253d5",
+        "last_commit_time": "2021-05-24T23:54:58"
     }
 }
