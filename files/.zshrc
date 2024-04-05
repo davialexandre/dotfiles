@@ -53,9 +53,11 @@ SPACESHIP_DOCKER_SHOW=false
 # some of them need the keys here
 test -e ~/.private_env && source ~/.private_env
 
+export GOPATH="$HOME/go"
+
 # Set PATH. We need this here, before the plugins list, because some of (them thefuck, for example) look
 # for commands there 
-export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/npm/bin:$HOME/bin:$HOME/.composer/vendor/bin:/snap/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$GOROOT/bin:$GOPATH/bin:$HOME/Applications/git-fuzzy/bin"
+export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/npm/bin:$HOME/bin:$HOME/.composer/vendor/bin:/snap/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$GOROOT/bin:$GOPATH/bin:$HOME/Applications/git-fuzzy/bin:$HOME/Applications/activitywatch:/usr/local/go/bin"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -109,6 +111,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export GNOME_KEYRING_CONTROL=/run/user/1000/keyring
+export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 
 source /home/davi/.config/broot/launcher/bash/br
 
