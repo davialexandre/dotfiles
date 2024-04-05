@@ -28,3 +28,6 @@
 [submodule "files/.vim/bundle/fzf.vim"]
 	path = files/.vim/bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "files/.vim/bundle/vim-gutentags"]
+	path = files/.vim/bundle/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags
