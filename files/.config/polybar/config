@@ -70,21 +70,9 @@ temperature-thermal-zone = 3
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
-label = %icon%
+label = %index%
 index-sort = true
 wrapping-scroll = false
-
-ws-icon-0 = "1: www;󰖟"
-ws-icon-1 = "2: terminal;"
-ws-icon-2 = "3: music;󰎆"
-ws-icon-3 = "4: code;"
-ws-icon-4 = "5: chat;"
-ws-icon-5 = "6: notes;󱓧"
-ws-icon-7 = "7: organization;"
-ws-icon-6 = "9: games;"
-ws-icon-8 = "11;󱊫"
-ws-icon-9 = "12;󱊬"
-ws-icon-default = ""
 
 label-mode-padding = 2
 label-mode-foreground = #000
