@@ -213,6 +213,7 @@ exec --no-startup-id synology-drive
 exec --no-startup-id ulauncher --no-window-shadow
 exec --no-startup-id zeal
 exec --no-startup-id obsidian
+exec --no-startup-id gnome-terminal --role=dropdown -- tmux new-session -A -s dropdown
 
 # Media control
 bindsym XF86AudioPlay exec playerctl -a play-pause
@@ -246,7 +247,6 @@ client.placeholder ##282828 #282828 #ebdbb2 #282828 #282828
 for_window [window_role="dropdown"] move scratchpad
 for_window [window_role="dropdown"] resize set 1610 862
 bindsym $mod+dead_grave [window_role="dropdown"] scratchpad show; [window_role="dropdown"] move position center
-exec --no-startup-id gnome-terminal --role=dropdown
 
 # Zeal (Quick documentation)
 for_window [class="Zeal"] move scratchpad
