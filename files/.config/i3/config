@@ -35,7 +35,6 @@ bindsym $mod+Shift+g exec google-chrome
 bindsym $mod+F12 exec gnome-terminal --role=about --  bash -c "neofetch && read"
 bindsym $mod+Shift+p exec firefox --private-window
 bindsym $mod+b exec blueman-manager
-bindsym $mod+o exec obsidian
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -213,6 +212,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id synology-drive
 exec --no-startup-id ulauncher --no-window-shadow
 exec --no-startup-id zeal
+exec --no-startup-id obsidian
 
 # Media control
 bindsym XF86AudioPlay exec playerctl -a play-pause
@@ -251,6 +251,11 @@ exec --no-startup-id gnome-terminal --role=dropdown
 # Zeal (Quick documentation)
 for_window [class="Zeal"] move scratchpad
 bindsym $mod+z [class="Zeal"] scratchpad show, move position center
+
+# Obsidian
+for_window [class="obsidian"] move scratchpad
+for_window [class="obsidian"] resize set 2100 1400
+bindsym $mod+o [class="obsidian"] scratchpad show, move position center
 
 # Special windows handling
 for_window [title="Gpick"] floating enable
