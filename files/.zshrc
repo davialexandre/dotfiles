@@ -14,6 +14,7 @@ SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_RUBY_SHOW=false
 #SPACESHIP_RUST_SHOW=true
 SPACESHIP_DOCKER_SHOW=false
+SPACESHIP_PROMPT_ASYNC=false
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -56,7 +57,7 @@ test -e ~/.private_env && source ~/.private_env
 export GOPATH="$HOME/go"
 
 # Set PATH. We need this here, before the plugins list, because some of (them thefuck, for example) look
-# for commands there 
+# for commands there
 export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/npm/bin:$HOME/bin:$HOME/.composer/vendor/bin:/snap/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$GOROOT/bin:$GOPATH/bin:$HOME/Applications/git-fuzzy/bin:$HOME/Applications/activitywatch:/usr/local/go/bin"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
