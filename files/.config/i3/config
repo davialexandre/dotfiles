@@ -212,6 +212,7 @@ exec --no-startup-id copyq
 exec --no-startup-id nm-applet
 exec --no-startup-id synology-drive
 exec --no-startup-id ulauncher --no-window-shadow
+exec --no-startup-id zeal
 
 # Media control
 bindsym XF86AudioPlay exec playerctl -a play-pause
@@ -248,7 +249,6 @@ bindsym $mod+dead_grave [window_role="dropdown"] scratchpad show; [window_role="
 exec --no-startup-id gnome-terminal --role=dropdown
 
 # Zeal (Quick documentation)
-exec --no-startup-id zeal
 for_window [class="Zeal"] move scratchpad
 bindsym $mod+z [class="Zeal"] scratchpad show, move position center
 
