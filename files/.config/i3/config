@@ -214,6 +214,7 @@ exec --no-startup-id ulauncher --no-window-shadow
 exec --no-startup-id zeal
 exec --no-startup-id obsidian
 exec --no-startup-id gnome-terminal --role=dropdown -- tmux new-session -A -s dropdown
+exec --no-startup-id todoist
 
 # Media control
 bindsym XF86AudioPlay exec playerctl -a play-pause
@@ -256,6 +257,11 @@ bindsym $mod+z [class="Zeal"] scratchpad show, move position center
 for_window [class="obsidian"] move scratchpad
 for_window [class="obsidian"] resize set 2100 1400
 bindsym $mod+o [class="obsidian"] scratchpad show, move position center
+
+# Todoist
+for_window [class="Todoist"] move scratchpad
+for_window [class="Todoist"] resize set 1200 1300
+bindsym $mod+t [class="Todoist"] scratchpad show, move position center
 
 # Special windows handling
 for_window [title="Gpick"] floating enable
