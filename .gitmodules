@@ -31,3 +31,6 @@
 [submodule "files/.vim/bundle/vim-gutentags"]
 	path = files/.vim/bundle/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags
+[submodule "files/.vim/bundle/onedark.vim"]
+	path = files/.vim/bundle/onedark.vim
+	url = https://github.com/joshdick/onedark.vim.git
