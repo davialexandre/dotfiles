@@ -274,4 +274,8 @@
     appname = Firefox
     new_icon = 96x96/apps/todoist
     body = *Todoist Reminder*
+
+[todoist]
+    appname = Todoist
+    new_icon = 96x96/apps/todoist
 # vim: ft=cfg
