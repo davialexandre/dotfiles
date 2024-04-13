@@ -58,7 +58,7 @@ export GOPATH="$HOME/go"
 
 # Set PATH. We need this here, before the plugins list, because some of (them thefuck, for example) look
 # for commands there
-export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/npm/bin:$HOME/bin:$HOME/.composer/vendor/bin:/snap/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$GOROOT/bin:$GOPATH/bin:$HOME/Applications/git-fuzzy/bin:$HOME/Applications/activitywatch:/usr/local/go/bin"
+export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/npm/bin:$HOME/bin:$HOME/.composer/vendor/bin:/snap/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$GOROOT/bin:$GOPATH/bin:$HOME/Applications/git-fuzzy/bin:$HOME/Applications/activitywatch:/usr/local/go/bin:$HOME/.tmux/plugins/tmuxifier/bin"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -120,3 +120,4 @@ source /home/davi/.config/broot/launcher/bash/br
 
 eval "$(navi widget zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
+eval "$(tmuxifier init -)"
