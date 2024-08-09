@@ -1,6 +1,7 @@
 alias d="cd ~/Downloads"
 alias p="cd /projetos"
-alias exa="exa --header --long --all --group"
+alias eza="eza --header --long --all --git --group --hyperlink"
+alias exa="eza"
 alias sfcc="php bin/console cache:clear"
 alias sfsu="php bin/console doctrine:schema:update --force"
 alias sre="php bin/console make:entity --regenerate"
