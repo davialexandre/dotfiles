@@ -24,15 +24,15 @@ font pango:Ubuntu 10
 floating_modifier $mod
 
 # Apps start bindings
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty 
 bindsym $mod+Shift+b exec firefox
 bindsym $mod+Menu exec gnome-calculator
 bindsym XF86Calculator exec gnome-calculator
-bindsym $mod+Shift+m exec gnome-terminal -e "htop"
+bindsym $mod+Shift+m exec kitty "htop"
 bindsym $mod+n exec nautilus -w
 bindsym $mod+Shift+s exec pavucontrol
 bindsym $mod+Shift+g exec google-chrome
-bindsym $mod+F12 exec gnome-terminal --role=about --  bash -c "neofetch && read"
+bindsym $mod+F12 exec kitty --class=about bash -c "neofetch && read"
 bindsym $mod+Shift+p exec firefox --private-window
 bindsym $mod+b exec blueman-manager
 
@@ -199,7 +199,7 @@ for_window [class="Gnome-calendar"] floating enable
 for_window [class="Gnome-calculator"] floating enable
 
 # Neofetch "about" window
-for_window [window_role="about"] floating enable
+for_window [class="about"] floating enable, resize set 900 600, move position center
 
 # Autostartup ups
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -213,7 +213,7 @@ exec --no-startup-id synology-drive
 exec --no-startup-id ulauncher --no-window-shadow
 exec --no-startup-id zeal
 exec --no-startup-id obsidian
-exec --no-startup-id gnome-terminal --role=dropdown -- tmux new-session -A -s dropdown
+exec --no-startup-id kitty --class=dropdown tmux new-session -A -s dropdown
 exec --no-startup-id todoist
 
 # Media control
@@ -245,9 +245,8 @@ client.unfocused #3c3836 #3c3836 #ebdbb2 #3c3836 #3c3836 #3c3836
 client.placeholder ##282828 #282828 #ebdbb2 #282828 #282828
 
 # Dropdown terminal
-for_window [window_role="dropdown"] move scratchpad
-for_window [window_role="dropdown"] resize set 1610 862
-bindsym $mod+dead_grave [window_role="dropdown"] scratchpad show; [window_role="dropdown"] move position center
+for_window [class="dropdown"] move scratchpad, resize set 1610 862
+bindsym $mod+dead_grave [class="dropdown"] scratchpad show, move position center
 
 # Zeal (Quick documentation)
 for_window [class="Zeal"] move scratchpad
